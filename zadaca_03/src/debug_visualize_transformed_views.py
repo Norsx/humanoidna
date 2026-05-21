@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Debug helper: visualize per-view transformed pointclouds saved by reconstruct_scene.
 
 Usage:

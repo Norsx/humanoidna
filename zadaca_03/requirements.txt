@@ -1,13 +1,12 @@
-# Project dependencies detected from imports
-numpy
-matplotlib
-scipy
-open3d
-ultralytics
-Pillow
-opencv-python
+# Project dependencies verified and tested under Python 3.9
+numpy==2.0.2
+matplotlib==3.9.4
+scipy==1.13.1
+open3d==0.19.0
+ultralytics==8.4.52
+Pillow==11.3.0
+opencv-python==4.13.0.92
 
-# Optional / hardware-specific (install only if needed)
-# pyrealsense2  # Intel RealSense SDK; install only if you have the device and wheels available
-# ur_rtde       # UR RTDE Python bindings (if using RTDEReceiveInterface)
-# rtde          # alternative RTDE package
+# Hardware / Real-time execution dependencies (Successfully installed and verified)
+pyrealsense2==2.56.5.9235  # Intel RealSense SDK; required for capture_scene.py
+ur_rtde==1.6.3             # UR RTDE Python bindings; required for ur_executor.py / ur_pose_to_matrix.py
