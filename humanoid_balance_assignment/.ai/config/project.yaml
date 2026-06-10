@@ -1,0 +1,26 @@
+name: "humanoid_balance_assignment"
+type: "homework"              # seminar | thesis | paper | homework
+latex_format: "fsb-seminar"  # fsb-seminar | fsb-thesis | fsb-paper
+brain_mode: "global"         # none | global
+# RAG is always available via AgentBrain (~/.agentbrain). Embeddings use Gemini
+# if GEMINI_API_KEY is set in .env, otherwise local sentence-transformers.
+
+# --- Metadata za naslovnicu (latex_architect popunjava main.tex) ---
+author_name: "Ivan Noršić"              # Ime i prezime studenta
+course_name: "HUMANOIDNA ROBOTIKA"              # Naziv kolegija (UPPERCASE u dokumentu)
+seminar_title: "Balansiranje jednostavnog humanoidnog trupa"            # Puni naslov seminara
+seminar_title_short: "Balansiranje humanoidnog trupa"      # Skraćeni naslov za header (max ~50 znakova)
+professor_title: ""          # Titula (npr. "Prof. dr. sc.")
+professor_name: ""           # Ime i prezime profesora
+
+# --- Build & page limit ---
+max_pages: 12                # build skripta upozorava ako PDF premašuje N stranica
+dist_version: "dev"          # build piše PDF u dist/<dist_version>/ (npr. "v1.0" za predaju)
+
+# --- Opcijski popisi (latex_architect uključuje ako je true) ---
+include_lof: false           # \listoffigures
+include_lot: false           # \listoftables
+
+# AgentBrain version used during bootstrap
+agentbrain_version: "2.0.0"
+agentbrain_commit: "88fe7c3"

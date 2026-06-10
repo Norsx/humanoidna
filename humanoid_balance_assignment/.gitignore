@@ -1,0 +1,55 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# RAG vector store (auto-generated, large)
+.ai/rag/db/
+.ai/rag/parsed/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# LaTeX build directories (build-docs scripts + LaTeX Workshop)
+docs/**/build/
+
+# Generated PDFs in docs build (Tectonic outputs next to source)
+docs/**/*.pdf
+
+# Generated PDFs in dist (built by CI or scripts)
+dist/**/*.pdf
+
+# Bootstrap marker
+.ai/.bootstrapped
+
+# Personal notes
+IDEAS.md
+TODO.md
+
+# Test / sandbox directories
+TestRealm/
+
+# Claude Code git worktrees — runtime, never tracked
+.claude/worktrees/

@@ -1,0 +1,16 @@
+# LiteRealm Python Dependencies
+# Installed automatically by bootstrap.
+
+python-dotenv
+mujoco>=3.1.0
+numpy
+scipy
+matplotlib
+
+# --- RAG dependencies (NOT installed per-project) ---
+# These live once in ~/.agentbrain/.venv; RAG always runs through AgentBrain.
+# docling                   # ML-based PDF parser (tables, layout, figures)
+# lancedb                   # vector store (file-based, no server)
+# sentence-transformers     # local embeddings
+# google-generativeai       # cloud embeddings (Gemini)
+# pypdf                     # lightweight fallback parser
