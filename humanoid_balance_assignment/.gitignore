@@ -53,3 +53,7 @@ TestRealm/
 
 # Claude Code git worktrees — runtime, never tracked
 .claude/worktrees/
+
+# Simulation output folder (local runs)
+results/
+
